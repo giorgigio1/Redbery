@@ -12,6 +12,36 @@
 
 .info {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info h2 {
+    width: 80%;
+    font-size: 60px;
+    color: #FE3B1F;
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.info input {
+    padding: 12px 100px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.info input:nth-child(4) {
+    margin-top: 15px; 
+}
+
+a {
+    text-decoration: none;
 }
 
 .text {
@@ -19,49 +49,19 @@
     background-color: #181818;
 }
 
-.info h2 {
-    color: #FE3B1F;
-    width: 80%;
-    margin-left: 13%;
-    margin-top: 70px;
-    font-size: 60px;
-    line-height: 79px;
-    font-weight: bold;
-}
-
-.inputs {
-    margin-top: 30px;
-}
-
-.info input {
-    width: 350px;
-    height: 40px;
-    border: 1px solid gray;
-    margin-left: 205px;
-    margin-top: 30px;
-}
-
-.pages {
-    width: 164px;
-    margin-left: 297px;
-    margin-top: 85px;
-}
-
 .text h2 {
-    color: #FE3B1F;
-    width: 80%;
     margin-left: 13%;
-    margin-top: 70px;
+    margin-top: 55px;
+    width: 80%;
     font-size: 60px;
-    line-height: 79px;
-    font-weight: bold;
+    color: #FE3B1F;
 }
 
 .text p {
-    font-size: 20px;
-    line-height: 40px;
-    width: 70%;
     margin-left: 13%;
     margin-top: 100px;
+    width: 70%;
+    font-size: 20px;
+    line-height: 40px;
     color: white;
 }
