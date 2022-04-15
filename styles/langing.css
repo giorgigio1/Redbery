@@ -9,29 +9,25 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    width: 100%;
+body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url(/images/stars.png);
-    background-color: black;
 }
 
-/* .stars {
+.wrapper {
+    min-width: 633px;
     width: 100%;
-    height: 100vh;
-    position: absolute;
-} */
+    height: 100%;
+    background-image: url(/images/stars.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 h1 {
     color: #FE3B1F;
     font-size: 70px;
-    position: absolute;
-    top: 20%;
-    transform: translate(0 -20%);
+    margin-top: 120px;
 }
 
 .button {
@@ -40,18 +36,13 @@ h1 {
     background-color: #FE3B1F;
     color: white;
     text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 120px;
 }
 
 .submit {
     color: white;
     font-size: 18px;
-    position: absolute;
-    top: 59%;
-    transform: translate(0, -59%);
+    margin-top: 30px;
 }
 
 figure {
@@ -61,8 +52,5 @@ figure {
 .rocketman {
     width: 330px;
     transform: rotate(2deg);
-    position: absolute;
-    top: 59%;
-    /* transform: translate(0, -60%); */
 }
 
