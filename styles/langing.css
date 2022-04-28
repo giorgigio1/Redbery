@@ -1,54 +1,56 @@
+@font-face {
+    src: url(/fonts/Rowdies-Regular.ttf);
+    font-family: 'rowdies';
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+}
+
+body {
+    height: 100vh;
 }
 
 .wrapper {
+    min-width: 633px;
     width: 100%;
-    height: 100vh;
-}
-
-.stars {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
+    height: 100%;
+    background-image: url(/images/stars.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     color: #FE3B1F;
     font-size: 70px;
-    position: absolute;
-    top: 120px;
-    left: 443px;
-}
-
-.rocketman {
-    width: 300px;
-    position: absolute;
-    top: 430px;
-    left: 610px;
+    margin-top: 120px;
 }
 
 .button {
-    width: 280px;
-    height: 50px;
+    padding: 15px 60px;
     border-radius: 50px;
     background-color: #FE3B1F;
     color: white;
-    position: absolute;
-    left: 620px;
-    top: 320px; 
-    text-align: center;
-    line-height: 50px;
     text-decoration: none;
+    margin-top: 120px;
 }
 
 .submit {
     color: white;
-    position: absolute;
-    top: 400px;
-    left: 685px;
+    font-size: 18px;
+    margin-top: 30px;
 }
+
+figure {
+    width: 330px;
+}
+
+.rocketman {
+    width: 330px;
+    transform: rotate(2deg);
+}
+
