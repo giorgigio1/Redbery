@@ -41,6 +41,7 @@ body {
     margin-top: 25px;
 }
 
+
 input {
     padding-left: 50px;
 }
@@ -66,16 +67,14 @@ a {
 .text h2 {
     width: 80%;
     font-size: 50px;
-    margin-top: 55px;
-    margin-left: 13%;
+    margin: 55px 0 0 13%;
     color: #FE3B1F;
 }
 
 .text p {
     width: 70%;
     font-size: 20px;
-    margin-left: 13%;
-    margin-top: 100px;
+    margin: 100px 0 0 13%;
     line-height: 40px;
     color: white;
     overflow: hidden;

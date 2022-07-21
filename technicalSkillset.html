@@ -5,29 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/technicalSkillset.css">
     <title>Redbery</title>
 </head>
 <body>
   <section class="wrapper">
       <section class="info">
-        <h2>Tell us about your skills</h2>
+        <h2 id="h2">Tell us about your skills</h2>
         <form class="inputs" action="">
-                <select name="" id="">
-                    <option class="abc" placeholder="">Skills</option>
-                    <option placeholder="">HTML</option>
-                    <option placeholder="">CSS</option>
+                <select name="" id="list" class="list2">
                 </select>
-                <input type="text" placeholder="Experience Duration in years">
-                <button>Add Programing Language</button>
-                <input class="input3" type="text" placeholder="PHP Years of Experience: 3">
-                <img class="remove" src="/images/Remove.png" alt="">
-                <input type="text" placeholder="React Years of Experience: 3">
-                <img class="remove2" src="/images/Remove.png" alt="">
+                <input id="getYear" type="text" placeholder="Experience Duration in years">
+                <button id="btn" >Add Programing Language</button>
         </form>
         <figure class="pages">
             <a href="personalInformation.html">
-                <img src="/images/Previous.png" alt="">
+                <img src="/images/Previous.png" alt="">  
             </a>
             <a href="personalInformation.html">
                 <img src="/images/Ellipse 1.png" alt="">
@@ -59,5 +53,7 @@
         </p>
       </section>
   </section>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/technicalSkillset.js"></script>
 </body>
 </html>

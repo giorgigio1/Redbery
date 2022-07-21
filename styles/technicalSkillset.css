@@ -40,19 +40,17 @@ body {
 }
 
 .remove {
-    position: absolute;
-    right: 10px;
-    bottom: 72px;
-}
-
-.remove2 {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    cursor: pointer;
 }
 
 select {
     color: red;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .inputs input, form select {
@@ -60,17 +58,30 @@ select {
     height: 38px;
     padding-left: 50px;
     margin-top: 25px;
+}
+
+.skill p {
+    margin: 0;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    margin: 15px 0;
     border: 1px solid gray;
 }
 
 button {
+    width: 210px;
+    height: 27px;
+    align-self: flex-end;
     background-color: #FE3B1F;
     color: white;
     border: none;
     cursor: pointer;
-    float: right;
-    padding: 5px 10px;
-    margin: 17px 0 15px 0;
+    margin-top: 10px;
 }
 
 .pages {

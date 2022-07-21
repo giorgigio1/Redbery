@@ -1,0 +1,121 @@
+// let arr = [...document.getElementsByClassName('valid')];
+// arr.forEach(el => {
+//      el.addEventListener("click", function(e) { 
+   
+//     valid(fname.value)
+//     e.preventDefault();
+// })
+// });
+
+//! function valid(fname, lName, email, phone) {
+// ?    console.log(fname)
+//todo   let text = document.getElementById('errMsg')
+//     let isValid = true
+//     if (fname.length === 0) {
+//         text.classList.remove('d-none')
+//     }   
+//     if (fname.length <= 2) isValid = false
+// }
+
+var html = `<i class="bi bi-x-circle"></i>
+<input class="input3" type="text" placeholder="PHP Years of Experience: 3">`
+function s() {
+    sessionStorage.setItem('gio', '1993');
+   
+    // Get saved data from sessionStorage
+  
+}
+let data = sessionStorage.getItem('gio');
+    
+console.log(data)
+
+
+document.getElementById('btn').addEventListener('click', () => {
+    s()
+});
+
+
+    let fname = document.getElementById('fName')
+    let lName = document.getElementById('lName')
+    let email = document.getElementById('email')
+    let phone = document.getElementById('phone')
+    
+    
+    fname.addEventListener('keyup',()=>{
+        let empty = document.getElementById('errMsgEmp')
+        let length = document.getElementById('errMsgLng')
+        if (fname.value.length === 0) {
+            empty.classList.remove('d-none')
+            length.classList.add('d-none')
+            fname.classList.add('border-danger')
+        }   
+        else if (fname.value.length < 3) {
+            fname.classList.add('border-danger')
+            length.classList.remove('d-none')
+            empty.classList.add('d-none')
+        }
+        else{
+            fname.classList.remove('border-danger')
+            length.classList.add('d-none')
+        }
+    })
+    
+    lName.addEventListener('keyup',()=>{
+        let empty = document.getElementById('lErrMsgEmp')
+        let length = document.getElementById('lErrMsgLng')
+        if (lName.value.length === 0) {
+            empty.classList.remove('d-none')
+            length.classList.add('d-none')
+            lName.classList.add('border-danger')
+        }   
+        else if (lName.value.length < 3) {
+            lName.classList.add('border-danger')
+
+            length.classList.remove('d-none')
+            empty.classList.add('d-none')
+        }
+        else{
+            lName.classList.remove('border-danger')
+            length.classList.add('d-none')
+        }
+    })
+
+    email.addEventListener('keyup',()=>{
+        let empty = document.getElementById('eErrMsgEmp')
+        let format = document.getElementById('eErrMsgFrm')
+        if (email.value.length === 0) {
+            empty.classList.remove('d-none')
+            format.classList.add('d-none')
+            email.classList.add('border-danger')
+        }   
+        else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+            email.classList.add('border-danger')
+            format.classList.remove('d-none')
+            empty.classList.add('d-none')
+        }
+        else{
+            email.classList.remove('border-danger')
+            format.classList.add('d-none')
+        }
+    })
+
+    phone.addEventListener('keyup',()=>{
+        let regex = /^\+9955\d\d\d\d\d\d\d\d$/i;
+        let format = document.getElementById('pErrMsg')
+        if (!regex.test(phone.value)) {
+            phone.classList.add('border-danger')
+            format.classList.remove('d-none')
+        }
+        else{
+            phone.classList.remove('border-danger')
+            format.classList.add('d-none')
+        }
+    })
+
+    // window.fetch("https://bootcamp-2022.devtest.ge/api/skills").then(res => res.json()).then(result => {
+    //      Sheni kodi aq gaushvi rac ginda ro qna
+    //      Resultshi geqneba dabrunebuli info api dan
+    //     console.log(result)
+    //     })
+
+   
