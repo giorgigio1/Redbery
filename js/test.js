@@ -187,24 +187,106 @@
 
 
 
-try {
-    const numbers = [1,1, 2, 3, 4]
-    const count = countOccurrences(null, 1)
-    console.log(count)
-}
-catch (e) {
-    console.log(e.message)
-}
+// try {
+//     const numbers = [1,1, 2, 3, 4]
+//     const count = countOccurrences(null, 1)
+//     console.log(count)
+// }
+// catch (e) {
+//     console.log(e.message)
+// }
 
-function countOccurrences(array, searchElement) {
-    if (!Array.isArray(array)) 
-        throw new Error('Invalid array!')
+// function countOccurrences(array, searchElement) {
+//     if (!Array.isArray(array)) 
+//         throw new Error('Invalid array!')
 
-    return array.reduce((accumulator, current) => {
-        const occurrence = (current == searchElement) ? 1 : 0
-        return accumulator + occurrence
-    }, 0)
-}
+//     return array.reduce((accumulator, current) => {
+//         const occurrence = (current == searchElement) ? 1 : 0
+//         return accumulator + occurrence
+//     }, 0)
+// }
+
+
+// let select = document.querySelector('#list')
+// window.fetch("https://bootcamp-2022.devtest.ge/api/skills").then(res => res.json()).then(result => {
+//         result.map(lang => {
+//                 let option = document.createElement('option')
+//                 option.setAttribute("placeholder", lang.title)
+//                 let text = document.createTextNode(lang.title)
+//                 option.appendChild(text)
+//                 select.appendChild(option)
+//         })
+//         })
+
+        
+//         document.querySelector('#btn').addEventListener('click', (e) => {
+//             e.preventDefault()
+//             console.log(e.target.id)
+//             let getYear = document.querySelector('#getYear').value
+//             yearValidation(getYear) ? createSkill(select.value, getYear) : notValid()
+//         });
+        
+//         function yearValidation(value) {
+//             return !(isNaN(value) || value.length == 0 || Number(value) <= 0)
+//         }
+        
+// const inputs = document.querySelector('.inputs');
+
+// function createSkill(lang, years) {
+//         let p = document.createElement('p')
+//         p.innerText = `${lang}          Years of Experience: ${Number(years)}`
+//         let btnDelete = document.createElement('img')
+//         btnDelete.setAttribute('src', "/images/Remove.png")
+//         btnDelete.setAttribute('class', "remove")
+//         const div = document.createElement('div')
+//         div.classList.add('skill')
+//         div.appendChild(p)
+//         div.appendChild(btnDelete)
+//         inputs.appendChild(div)
+//         btnDelete.addEventListener('click', (e) => {
+//                 inputs.removeChild(div)
+//         })
+// }
+
+// function notValid() {
+//         console.error('Invalid year!')
+// }
+
+
+
+
+
+
+// const cars = [
+//     {title: 'bmw', years: 2015},
+//     {title: 'audi', years: 2012},
+//     {title: 'mercedes', years: 2013},
+// ]
+
+// console.log(cars)
+// console.log(cars.sort((a, b) => (a.title > b.title) ? 1 : -1))
+// // console.log(cars.sort((a, b) => a.years - b.years))
+// // console.log(cars.sort((a, b) => {
+// //     if (a.title > b.title) return 1
+// //     if (a.title < b.title) return -1
+// //     return 0
+// // }))
+
+
+
+// let table = ['cat', 'dog', 'elephant', 'bee', 'ant']
+// console.log(table.sort())
+
+// let test = 'A'
+// console.log(test)
+// console.log(test.toLowerCase())
+
+
+
+
+
+
+
 
 
 

@@ -17,22 +17,22 @@
 //     if (fname.length <= 2) isValid = false
 // }
 
-var html = `<i class="bi bi-x-circle"></i>
-<input class="input3" type="text" placeholder="PHP Years of Experience: 3">`
-function s() {
-    sessionStorage.setItem('gio', '1993');
+// var html = `<i class="bi bi-x-circle"></i>
+// <input class="input3" type="text" placeholder="PHP Years of Experience: 3">`
+// function s() {
+//     sessionStorage.setItem('gio', '1993');
    
-    // Get saved data from sessionStorage
+//     // Get saved data from sessionStorage
   
-}
-let data = sessionStorage.getItem('gio');
+// }
+// let data = sessionStorage.getItem('gio');
     
-console.log(data)
+// console.log(data)
 
 
-document.getElementById('btn').addEventListener('click', () => {
-    s()
-});
+// document.getElementById('btn').addEventListener('click', () => {
+//     s()
+// });
 
 
     let fname = document.getElementById('fName')
@@ -112,10 +112,3 @@ document.getElementById('btn').addEventListener('click', () => {
         }
     })
 
-    // window.fetch("https://bootcamp-2022.devtest.ge/api/skills").then(res => res.json()).then(result => {
-    //      Sheni kodi aq gaushvi rac ginda ro qna
-    //      Resultshi geqneba dabrunebuli info api dan
-    //     console.log(result)
-    //     })
-
-   
