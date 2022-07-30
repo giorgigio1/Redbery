@@ -15,40 +15,40 @@ let inputs = document.querySelector('.inputs')
 
 document.querySelector('#btn').addEventListener('click', e => {
         e.preventDefault()
-        yearsValidation() ? createSkills(select.value, getYear.value) : alert('Invalid Year!')
+        // yearsValidation() ? createSkills(select.value, getYear.value) : alert('Invalid Year!')
 
-        // if (yearsValidation2(select.value, getYear.value) === 'text') {
-        //         document.querySelector('#errNumber').classList.remove('d-none')
-        //         document.querySelector('#errOneTime').classList.add('d-none')
-        // }
-        // else if (yearsValidation2(select.value, getYear.value) === 'choosen') {
-        //         document.querySelector('#errOneTime').classList.remove('d-none')
-        //         document.querySelector('#errNumber').classList.add('d-none')
-        // }
-        // else if (yearsValidation2(select.value, getYear.value) === 'notChoosen') {
-        //         createSkills(select.value, getYear.value)
-        //         document.querySelector('#errOneTime').classList.add('d-none')
-        //         document.querySelector('#errNumber').classList.add('d-none')
-        // }
-        // else if (yearsValidation2(select.value, getYear.value)) {
-        //         createSkills(select.value, getYear.value)
-        //         document.querySelector('#errOneTime').classList.add('d-none')
-        //         document.querySelector('#errNumber').classList.add('d-none')
-        // }
+        if (yearsValidation2(select.value, getYear.value) === 'text') {
+                document.querySelector('#errNumber').classList.remove('d-none')
+                document.querySelector('#errOneTime').classList.add('d-none')
+        }
+        else if (yearsValidation2(select.value, getYear.value) === 'choosen') {
+                document.querySelector('#errOneTime').classList.remove('d-none')
+                document.querySelector('#errNumber').classList.add('d-none')
+        }
+        else if (yearsValidation2(select.value, getYear.value) === 'notChoosen') {
+                createSkills(select.value, getYear.value)
+                document.querySelector('#errOneTime').classList.add('d-none')
+                document.querySelector('#errNumber').classList.add('d-none')
+        }
+        else if (yearsValidation2(select.value, getYear.value)) {
+                createSkills(select.value, getYear.value)
+                document.querySelector('#errOneTime').classList.add('d-none')
+                document.querySelector('#errNumber').classList.add('d-none')
+        }
 })   
 
-function yearsValidation() {
-        let selectedValue = document.querySelector(`#${select.value}`)
-        return !(isNaN(getYear.value) || getYear.value.length === 0 || Number(getYear.value) <= 0 || selectedValue !== null)
-}
-
-// function yearsValidation2() {
+// function yearsValidation() {
 //         let selectedValue = document.querySelector(`#${select.value}`)
-//         if (isNaN(getYear.value) || getYear.value.length === 0 || Number(getYear.value) <= 0) return 'text'
-//         if (selectedValue === null) return 'notChoosen'
-//         if (selectedValue !== null) return 'choosen'
-//         return true
+//         return !(isNaN(getYear.value) || getYear.value.length === 0 || Number(getYear.value) <= 0 || selectedValue !== null)
 // }
+
+function yearsValidation2() {
+        let selectedValue = document.querySelector(`#${select.value}`)   
+        if (isNaN(getYear.value) || getYear.value.length === 0 || Number(getYear.value) <= 0) return 'text'
+        if (selectedValue === null) return 'notChoosen'
+        if (selectedValue !== null) return 'choosen'
+        return true
+}
 
 function createSkills(lang, year) {
         let p = document.createElement('p')

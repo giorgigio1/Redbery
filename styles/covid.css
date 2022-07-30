@@ -4,24 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 109vh;
-}
-
 .wrapper {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;;
     display: flex;
 }
 
 .info {
     width: 50%;
-}
-
-.text {
-    width: 50%;
-    height: 100%;
-    background-color: #181818;
 }
 
 .info h2 {
@@ -31,31 +21,8 @@ body {
     color: #FE3B1F;
 }
 
-.form3, .form5 {
-    width: 55%;
-    height: 35px;
-    margin-top: 15px;
-    background-color:#FE3B1F;
-    position: relative;
-}
-
-.calendarIcon1, .calendarIcon2 {
-    width: 13px;
-    height: 13px;
-    position: absolute;
-    right: 11px;
-    top: 11px;
-}
-
-.calendar1, .calendar2 {
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    padding-left: 40px;;
-}
-
 article {
-    margin: 35px 0 0 130px;
+    margin: 50px 0 0 130px;
 }
 
 article h4 {
@@ -84,9 +51,11 @@ a {
 }
 
 .text {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #181818;
 }
 
 .text h2 {
@@ -104,4 +73,35 @@ a {
     letter-spacing: 0.05em;
     margin-top: 100px;
 }
+
+#date_ex {
+    width: 453px;
+    height: 35px;
+    padding-left: 40px;
+    background: url(/images/calendar.png) no-repeat right 5px center;
+}
+
+#date_ex2 {
+    width: 453px;
+    height: 35px;
+    padding-left: 40px;
+    background: url(/images/calendar.png) no-repeat right 5px center;
+}
+
+/* #date_ex::placeholder{
+    color: red;
+} */
+
+/* ::-webkit-datetime-edit { padding: 1em;; }
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { background-color:aqua; }
+::-webkit-calendar-picker-indicator {
+    display: none;
+    margin-left: 55px;
+    background-color: aqua;
+} */
 

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/insights.css">
     <title>Redbery</title>
 </head>
@@ -14,13 +16,13 @@
         <article class="art1">
           <h4>Would you attend Devtalks and maybe also organize your own?</h4>
             <form action="">
-              <input type="radio">
+              <input type="radio" id="devtalkYes">
               <label for="">Yes</label><br>
-              <input type="radio">
+              <input type="radio" id="devtalkNo">
               <label for="">No</label><br>
             </form>
         </article>
-        <article class="art2">
+        <article class="art2 d-none">
             <h4>What would you speak about at Devtalk?</h4>
             <form class="form2" action="">
               <textarea placeholder="I would..." name="" id="" cols="55" rows="6"></textarea>
@@ -70,5 +72,6 @@
         </p>
       </section>
   </section>  
+  <script src="./js/insights.js"></script>
 </body>
 </html>

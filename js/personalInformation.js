@@ -1,40 +1,3 @@
-// let arr = [...document.getElementsByClassName('valid')];
-// arr.forEach(el => {
-//      el.addEventListener("click", function(e) { 
-   
-//     valid(fname.value)
-//     e.preventDefault();
-// })
-// });
-
-//! function valid(fname, lName, email, phone) {
-// ?    console.log(fname)
-//todo   let text = document.getElementById('errMsg')
-//     let isValid = true
-//     if (fname.length === 0) {
-//         text.classList.remove('d-none')
-//     }   
-//     if (fname.length <= 2) isValid = false
-// }
-
-// var html = `<i class="bi bi-x-circle"></i>
-// <input class="input3" type="text" placeholder="PHP Years of Experience: 3">`
-// function s() {
-//     sessionStorage.setItem('gio', '1993');
-   
-//     // Get saved data from sessionStorage
-  
-// }
-// let data = sessionStorage.getItem('gio');
-    
-// console.log(data)
-
-
-// document.getElementById('btn').addEventListener('click', () => {
-//     s()
-// });
-
-
     let fname = document.getElementById('fName')
     let lName = document.getElementById('lName')
     let email = document.getElementById('email')
@@ -112,3 +75,17 @@
         }
     })
 
+    // function s() {
+    //     sessionStorage.setItem('gio', '1993');
+       
+    //     // Get saved data from sessionStorage
+      
+    // }
+    // let data = sessionStorage.getItem('gio');
+        
+    // console.log(data)
+    
+    
+    // document.getElementById('btn').addEventListener('click', () => {
+    //     s()
+    // });

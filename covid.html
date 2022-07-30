@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/covid.css">
+    <link rel="stylesheet" href="./styles/datepicker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./js/datepicker.js"></script>
     <title>Redbery</title>
 </head>
 <body>
@@ -14,44 +19,42 @@
         <article class="art1">
             <h4>how would you prefer to work?</h4>
             <form action="">
-              <input type="radio">
+              <input type="radio" id="office">
               <label for="">From Sairme Office</label><br>
-              <input type="radio">
+              <input type="radio" id="home">
               <label for="">From Home</label><br>
-              <input type="radio">
+              <input type="radio" id="hybrid">
               <label for="">Hybrid</label>
             </form>
         </article>
         <article class="art2">
           <h4>Did you contact covid 19? :(</h4>
             <form action="">
-              <input type="radio">
+              <input type="radio" id="covidYes">
               <label for="">Yes</label><br>
-              <input type="radio">
+              <input type="radio" id="covidNo">
               <label for="">No</label><br>
             </form>
         </article>
-        <article class="art3">
+        <article class="art3 d-none">
           <h4>When?</h4>
             <form class="form3" action="">
-              <input class="calendar1" type="text" placeholder="Date">
-              <img class="calendarIcon1" src="/images/calendar.png" alt="">
+              <input type="text" id="date_ex" name="Date" placeholder="Date">
             </form>
         </article>
         <article class="art4">
           <h4>Have you been vaccinated?</h4>
           <form action="">
-            <input type="radio">
+            <input type="radio" id="vaccinatedYes">
             <label for="">Yes</label><br>
-            <input type="radio">
+            <input type="radio" id="vaccinatedNo">
             <label for="">No</label><br>
           </form>
         </article>
-        <article class="art5">
+        <article class="art5 d-none">
           <h4>When did you get your last covid vaccine?</h4>
             <form class="form5" action="">
-              <input class="calendar2" type="text" placeholder="Date">
-              <img class="calendarIcon2" src="/images/calendar.png" alt="">
+              <input type="text" id="date_ex2" name="Date" placeholder="Date">
             </form>
         </article>
         <figure class="pages">
@@ -90,5 +93,6 @@
         </p>
       </section>
   </section>  
+  <script src="./js/covid.js"></script>
 </body>
 </html>
